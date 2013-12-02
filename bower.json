@@ -1,0 +1,19 @@
+{
+  "name": "cirru-rainbow",
+  "version": "0.0.0",
+  "authors": [
+    "jiyinyiyong <jiyinyiyong@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rainbow": "~1.1.9"
+  },
+  "homepage": "https://github.com/jiyinyiyong/cirru-rainbow"
+}
