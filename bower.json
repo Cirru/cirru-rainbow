@@ -1,6 +1,6 @@
 {
   "name": "cirru-rainbow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "jiyinyiyong <jiyinyiyong@gmail.com>"
   ],
@@ -15,5 +15,10 @@
   "dependencies": {
     "rainbow": "~1.1.9"
   },
-  "homepage": "https://github.com/jiyinyiyong/cirru-rainbow"
+  "homepage": "https://github.com/Cirru/cirru-rainbow",
+  "description": "Rainbow highlight for Cirru Grammar",
+  "main": "src/cirru.js",
+  "keywords": [
+    "cirru"
+  ]
 }

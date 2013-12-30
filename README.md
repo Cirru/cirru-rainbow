@@ -10,17 +10,21 @@ Cirru in Twilight:
 
 ### Usage
 
-Syntax file:
+```
+bower install --save cirru-rainbow
+```
+
+Main file:
 
 ```
-src/cirru.js
+bower_components/cirru-rainbow/src/cirru.js
 ```
 
 Read docs of Rainbow or `index.html` to see how to use this.
 
 ### Live
 
-See this demo http://jiyinyiyong.github.io/cirru-rainbow
+See this demo http://repo.jiyinyiyong.me/cirru-rainbow/
 
 ### License
 
