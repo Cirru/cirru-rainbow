@@ -1,27 +1,28 @@
 
-o = (x) -> x
 Rainbow.extend "cirru", [
-  o
-    name: "comment"
-    pattern: /[\(\)]/g
-  o
-    name: "function"
-    pattern: /\n\s*\S+/g
-  o
-    name: "string"
-    pattern: /"([^\"]|(\\\"))*"/g
-  o
-    name: "constant.numeric"
-    pattern: /\d+/g
-  o
-    pattern: /(\s?\$)(\s\S+)/g
-    matches:
-      1: "comment"
-      2: "function"
-  o
-    name: "comment"
-    pattern: /\s\$\s/g
-  o
-    name: "variable"
-    pattern: /\S+/g
+  name: "string"
+  pattern: /"([^\"]|(\\\"))*"/g
+,
+  name: "keyword.operator"
+  pattern: /[\(\)\,\$]/g
+,
+  name: "entity.function"
+  pattern: /\n\s*[^\s\,\(\)\"]+/g
+,
+  name: "entity.function"
+  pattern: /^\s*[^\s\,\(\)\"]+/g
+,
+  name: "constant.numeric"
+  pattern: /\b\d+(_.\d+)?\b/g
+,
+  pattern: /(\s?\$)(\s[^\s\,\(\)\"]+)/g
+  matches:
+      1: "keyword.operator"
+      2: "entity.function"
+,
+  name: "keyword.operator"
+  pattern: /\s\$\s/g
+,
+  name: "variable"
+  pattern: /[^\s\,\(\)\"]+/g
 ]
